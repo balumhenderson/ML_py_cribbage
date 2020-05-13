@@ -16,9 +16,11 @@ class Card:
 
 		
 class Deck:
-	def __init__(self):
+	def __init__(self, shuffleTrue):
 		self.cards=[]
 		self.build()
+		if shuffleTrue:
+			self.shuffle()
 	
 	def build(self):
 		for s in ["Hearts", "Diamonds", "Spades", "Clubs"]:
@@ -30,7 +32,7 @@ class Deck:
 			c.show()
 	
 	def shuffle(self):
-		for _ in range(6):
+		for _ in range(3):
 			for i in range (len(self.cards)-1, 0, -1):
 				r = random.randint(0, i)
 				self.cards[i], self.cards[r] = self.cards[r], self.cards[i]

@@ -47,7 +47,7 @@ def countHand(hand, starter):
 	return(score)
 
 
-
+"""
 def vals(cards):
 	vals = []
 	for i range(len(cards)):
@@ -103,7 +103,7 @@ def compCount(player, comp):
 
 
 
-
+"""
 
 
 
